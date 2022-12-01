@@ -1,0 +1,153 @@
+/* Start Variables */
+:root {
+  --Dark-Gray: hsl(0, 0%, 55%);
+  --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-size: 15px;
+  font-family: "Alata", sans-serif;
+}
+ul {
+  list-style: none;
+}
+img {
+  display: block;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+header .content {
+  max-width: 600px;
+  margin-inline: auto;
+  padding-top: 18vh;
+}
+header .content .logo-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+header .content .logo-head p {
+  font-size: 2.5em;
+  letter-spacing: 18px;
+  text-transform: uppercase;
+  color: white;
+}
+header .content .logo-head img {
+  height: 25px;
+  cursor: pointer;
+}
+header .content .input-head {
+  position: relative;
+}
+header .content .input-head .checkbox {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid hsl(236, 33%, 92%);
+  cursor: pointer;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+header .content .input-head .checkbox:hover {
+  border-color: hsl(192, 100%, 67%) hsl(280, 87%, 65%) hsl(280, 87%, 65%)
+    hsl(192, 100%, 67%);
+}
+header .content input {
+  width: 100%;
+  padding: 15px 55px;
+  font-size: 1.1em;
+  border-radius: 6px;
+  border: none;
+  caret-color: hsl(220, 98%, 61%);
+}
+header .content input:focus {
+  outline: none;
+}
+main .content {
+  max-width: 600px;
+  margin-inline: auto;
+  border: 1px solid hsl(236, 33%, 92%);
+  border-radius: 5px;
+  position: relative;
+  top: -30px;
+  background-color: white;
+}
+main .content ul li {
+  padding: 10px;
+  border-bottom: 1px solid hsl(236, 33%, 92%);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main .content ul li .checkbox {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid hsl(236, 33%, 92%);
+  cursor: pointer;
+}
+main .content ul li .checkbox:hover {
+  border-color: hsl(192, 100%, 67%) hsl(280, 87%, 65%) hsl(280, 87%, 65%)
+    hsl(192, 100%, 67%);
+}
+main .content ul li p {
+  flex-grow: 1;
+}
+main .content ul li .close-button {
+  width: 25px;
+  height: 25px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  display: none;
+}
+main .content ul li:hover .close-button {
+  display: flex;
+}
+
+main .content .filter-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+}
+main .content .filter-control span {
+  padding: 10px 5px;
+  color: hsl(236, 9%, 61%);
+}
+main .content .filter-control span:last-child,
+main .content .filter-control div span {
+  cursor: pointer;
+}
+
+main .content .filter-control span:last-child:hover,
+main .content .filter-control div span:hover {
+  color: hsl(235, 19%, 35%);
+}
+main .content .filter-control div span.active {
+  color: hsl(240, 79%, 58%);
+}
